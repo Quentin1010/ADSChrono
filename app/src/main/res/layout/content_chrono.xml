@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutContentParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabChrono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/vector_check" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/textview_edge"
+            android:layout_marginRight="@dimen/textview_edge"
+            android:layout_marginTop="@dimen/textview_edge"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textChrono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="chrono1aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\nchrono2\nchrono3" />
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+</LinearLayout>
